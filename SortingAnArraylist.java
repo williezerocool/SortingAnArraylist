@@ -16,7 +16,7 @@ public class SortingAnArraylist {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         
         ArrayList<Integer> arr = new ArrayList<>();
         Random r = new Random();
@@ -30,7 +30,19 @@ public class SortingAnArraylist {
         
         System.out.println("ArrayList: " + arr);
         
-        ArrayList<Integer> arr2 = arr;
+        sort(arr);
+        
+        System.out.println("ArrayList: " + arr);
+        
+    }
+    
+    /**
+     *
+     * @param arr
+     */
+    public static void sort(ArrayList<Integer> arr){
+    
+         ArrayList<Integer> arr2 = arr;
         Integer temp =0;
         for(int i=0; i<arr.size(); i++){
             for(int j=0; j<arr.size(); j++){
@@ -43,9 +55,6 @@ public class SortingAnArraylist {
                 }
             }
         }
-        
-        System.out.println("ArrayList: " + arr);
-        
     }
 }
     
